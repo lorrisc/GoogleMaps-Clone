@@ -1,0 +1,50 @@
+/* NAVBAR */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100vh;
+}
+
+/* SWITCH MAP BUTTON */
+#switchMap__mainButton {
+    position: fixed;
+    left: 95px;
+    bottom: 15px;
+    width: 80px;
+    aspect-ratio: 1/1;
+}
+#switchMap__mainButton.rightlvl2 {
+    left: 515px;
+}
+
+/* SEARCH BAR */
+#searchbar {
+    position: fixed;
+    left: 95px;
+    top: 15px;
+    width: 400px;
+}
+
+/* ADDRESS INFORMATION */
+#adressResultInfo {
+    position: fixed;
+    top: 0px;
+    left: 80px;
+    width: 420px;
+}
+
+/* POINT INFORMATION */
+#pointInformation {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+}
+
+/* FAVORITE / HISTORIC */
+#locationUserList {
+    position: fixed;
+    top: 0px;
+    left: 80px;
+}

@@ -1,0 +1,11 @@
+/* SWITCH MAP BUTTON */
+#switchMap__mainButton.white {
+    background: white;
+    color: white;
+    border-color: white;
+}
+#switchMap__mainButton.black {
+    background: #000;
+    color: #000;
+    border-color: #000;
+}

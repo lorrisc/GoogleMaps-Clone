@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GoogleMaps Clone Lorris C</title>
+
+        <!-- css -->
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/position.css" rel="stylesheet" />
+        <link href="css/class.css" rel="stylesheet" />
+
+        <!-- leaflet -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="..." crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="..." crossorigin=""></script>
+    </head>
+    <body>
+        <section id="backgroundMap"></section>
+
+        <section id="navbar">
+            <button id="navbar__lieuxEnregistre" class="unactive">
+                <img src="assets/icons/grey_light/bookmark-empty.svg" alt="icone enregistré" />
+                <p>Adresses enregistrées</p>
+            </button>
+            <button id="navbar__historique" class="unactive">
+                <img src="assets/icons/grey_light/clock.svg" alt="icone historique" />
+                <p>Recherche récentes</p>
+            </button>
+        </section>
+
+        <section id="locationUserList" class="none">
+            <article id="locationUserList__save" class="none"></article>
+            <article id="locationUserList__historic" class="none"></article>
+            <button id="locationUserList__minimiseButton">
+                <div class="triangle pointLeft"></div>
+            </button>
+        </section>
+
+        <section id="searchbar">
+            <div id="searchbar__input">
+                <input type="text" id="searchbar__input__input" placeholder="Rechercher dans Google Maps" />
+                <div id="searchbar__input__button">
+                    <button><img src="assets/icons/grey/glass.svg" alt="icone recherche" /></button>
+                    <div class="separator none"></div>
+                    <button id="xmarkButton" class="none"><img id="xmark" src="assets/icons/grey/cross.svg" alt="icone fermer" /></button>
+                </div>
+            </div>
+            <div id="searchbar__result" class="none"></div>
+        </section>
+
+        <section id="adressResultInfo" class="none">
+            <article id="adressResultInfo__img">
+                <img src="" alt="image de la ville de l'adresse" />
+            </article>
+
+            <section class="scrollable">
+                <article id="adressResultInfo__principal">
+                    <div id="adressResultInfo__principal__adress">
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div id="adressResultInfo__principal__meteo"></div>
+                </article>
+                <article id="adressResultInfo__button">
+                    <button class="button" id="saveLoc">
+                        <div class="button__icon">
+                            <img id="bookmarkImg" src="assets/icons/blue/bookmark-empty.svg" />
+                        </div>
+                        <p>Enregistrer</p>
+                    </button>
+                </article>
+                <article id="adressResultInfo__text">
+                    <p></p>
+                </article>
+                <article id="adressResultInfo__photos">
+                    <div class="photos">
+                        <img src="" />
+                    </div>
+                    <div class="photos">
+                        <img src="" />
+                    </div>
+                    <div class="photos">
+                        <img src="" />
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <button id="switchMap__mainButton">
+            <div id="switchMap__mainButton__map"></div>
+            <p id="switchMap__mainButton__text"></p>
+        </button>
+
+        <section id="pointInformation" class="none">
+            <div id="pointInformation__info">
+                <div id="pointInformation__info__text">
+                    <p id="adress"></p>
+                    <p id="postcode_city"></p>
+                    <div id="separator"></div>
+                    <p id="geopoint"></p>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/globalFunctions.js"></script>
+        <script src="js/mapsFunction.js"></script>
+        <script src="js/mapsElements.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/searchAddress.js"></script>
+        <script src="js/cookie.js"></script>
+        <script src="js/navbar.js"></script>
+    </body>
+</html>
